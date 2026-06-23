@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Mail, Github, ArrowUpRight, Send } from 'lucide-react';
+import { Mail, Github, Linkedin, ArrowUpRight, Send } from 'lucide-react';
 import Section, { SectionTitle } from './Section';
 import { useLanguage } from '@/context/LanguageContext';
 
@@ -11,6 +11,7 @@ export default function Contact() {
   const icons: Record<string, React.ElementType> = {
     Email: Mail,
     GitHub: Github,
+    LinkedIn: Linkedin,
     Telegram: Send,
   };
 

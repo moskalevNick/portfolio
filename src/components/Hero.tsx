@@ -1,6 +1,5 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import { MapPin, Globe, Monitor } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
 
@@ -15,51 +14,41 @@ export default function Hero() {
       </div>
 
       <div className="mx-auto max-w-5xl px-6 py-20 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-muted"
+        <div
+          className="mb-6 inline-flex animate-slide-up items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-muted"
+          style={{ animationDelay: '0.1s' }}
         >
           <span className="relative flex h-2 w-2">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
           </span>
           {t.hero.badge}
-        </motion.div>
+        </div>
 
-        <motion.h1
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="mb-6 text-5xl font-bold leading-tight tracking-tight text-foreground md:text-7xl"
+        <h1
+          className="mb-6 animate-slide-up text-5xl font-bold leading-tight tracking-tight text-foreground md:text-7xl"
+          style={{ animationDelay: '0.2s' }}
         >
           Nikolay
-        </motion.h1>
+        </h1>
 
-        <motion.p
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="mx-auto mb-8 max-w-2xl text-xl text-muted md:text-2xl"
+        <p
+          className="mx-auto mb-8 max-w-2xl animate-slide-up text-xl text-muted md:text-2xl"
+          style={{ animationDelay: '0.3s' }}
         >
           {t.hero.role}
-        </motion.p>
+        </p>
 
-        <motion.p
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="mx-auto mb-10 max-w-2xl text-balance text-base leading-relaxed text-muted md:text-lg"
+        <p
+          className="mx-auto mb-10 max-w-2xl animate-slide-up text-balance text-base leading-relaxed text-muted md:text-lg"
+          style={{ animationDelay: '0.4s' }}
         >
           {t.hero.description}
-        </motion.p>
+        </p>
 
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="mb-12 flex flex-wrap items-center justify-center gap-4 text-sm text-muted"
+        <div
+          className="mb-12 flex animate-slide-up flex-wrap items-center justify-center gap-4 text-sm text-muted"
+          style={{ animationDelay: '0.5s' }}
         >
           <span className="inline-flex items-center gap-1.5">
             <MapPin className="h-4 w-4" />
@@ -73,13 +62,11 @@ export default function Hero() {
             <Globe className="h-4 w-4" />
             {t.hero.languages}
           </span>
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="flex flex-col items-center justify-center gap-4 sm:flex-row"
+        <div
+          className="flex animate-slide-up flex-col items-center justify-center gap-4 sm:flex-row"
+          style={{ animationDelay: '0.6s' }}
         >
           <a
             href="#contact"
@@ -93,23 +80,17 @@ export default function Hero() {
           >
             {t.hero.ctaSecondary}
           </a>
-        </motion.div>
+        </div>
       </div>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+      <div
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in"
+        style={{ animationDelay: '1s' }}
       >
         <div className="flex h-10 w-6 items-start justify-center rounded-full border border-white/20 p-2">
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
-            className="h-1.5 w-1.5 rounded-full bg-foreground"
-          />
+          <div className="h-1.5 w-1.5 animate-bounce rounded-full bg-foreground" />
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }

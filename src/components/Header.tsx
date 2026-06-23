@@ -1,6 +1,5 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, Send } from 'lucide-react';
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
@@ -23,12 +22,7 @@ export default function Header() {
   const nextLocale: Locale = locale === 'en' ? 'ru' : 'en';
 
   return (
-    <motion.header
-      initial={{ opacity: 0, y: -12 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: 'easeOut' }}
-      className="fixed left-0 right-0 top-0 z-50 border-b border-white/5 bg-background/80 backdrop-blur-md"
-    >
+    <header className="fixed left-0 right-0 top-0 z-50 animate-slide-down border-b border-white/5 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
         <Link href="/" className="text-lg font-semibold tracking-tight text-foreground">
           NM
@@ -64,6 +58,15 @@ export default function Header() {
             <Github className="h-5 w-5" />
           </a>
           <a
+            href="https://www.linkedin.com/in/nickmoskalev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted transition-colors hover:text-foreground"
+            aria-label="LinkedIn"
+          >
+            <Linkedin className="h-5 w-5" />
+          </a>
+          <a
             href="https://t.me/NikolayMoskalev"
             target="_blank"
             rel="noopener noreferrer"
@@ -84,6 +87,6 @@ export default function Header() {
           </button>
         </div>
       </div>
-    </motion.header>
+    </header>
   );
 }

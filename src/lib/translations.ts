@@ -118,6 +118,7 @@ export const translations = {
       links: [
         { label: 'Email', value: 'moskalevnikolay1@gmail.com', href: 'mailto:moskalevnikolay1@gmail.com' },
         { label: 'GitHub', value: 'github.com/moskalevNick', href: 'https://github.com/moskalevNick' },
+        { label: 'LinkedIn', value: 'linkedin.com/in/nickmoskalev', href: 'https://www.linkedin.com/in/nickmoskalev/' },
         { label: 'Telegram', value: '@NikolayMoskalev', href: 'https://t.me/NikolayMoskalev' },
       ],
     },
@@ -243,6 +244,7 @@ export const translations = {
       links: [
         { label: 'Email', value: 'moskalevnikolay1@gmail.com', href: 'mailto:moskalevnikolay1@gmail.com' },
         { label: 'GitHub', value: 'github.com/moskalevNick', href: 'https://github.com/moskalevNick' },
+        { label: 'LinkedIn', value: 'linkedin.com/in/nickmoskalev', href: 'https://www.linkedin.com/in/nickmoskalev/' },
         { label: 'Telegram', value: '@NikolayMoskalev', href: 'https://t.me/NikolayMoskalev' },
       ],
     },
