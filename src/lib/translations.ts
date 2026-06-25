@@ -10,9 +10,9 @@ export const translations = {
     },
     hero: {
       badge: 'Open to new opportunities',
-      role: 'Tech Lead / Front-end Architect',
+      role: 'Frontend / Fullstack developer',
       description:
-        'Tech Lead & Front-end architect with strong product vision. Experienced in leading web teams, Smart TV ecosystem (Tizen, WebOS), high-load streaming, and full-cycle development.',
+        'Fullstack & Frontend developer with strong product vision. Experienced in leading web teams, Smart TV ecosystem (Tizen, WebOS), high-load streaming, and full-cycle development.',
       location: 'Remote / Europe',
       focus: 'Smart TV · Web · Full-cycle',
       languages: 'English B1 · Russian native',
@@ -32,10 +32,16 @@ export const translations = {
         },
         {
           period: 'Jul 2023 — now',
-          title: 'TV-alike Streaming Service',
+          title: 'Voka.tv web',
           role: 'Web-app Developer · team of 30',
           description:
-            'Full-cycle development, design & logic improvements, performance optimizations, custom SSR. Integration with streaming backends, DRM, and analytics modules.',
+            'Developed the client side of a high-load web application using React with MobX for state management, along with a custom SSR solution on Node.js.\n' +
+              '\n' +
+              'Implemented code splitting, lazy loading for components and routes, and client-side data caching to optimize performance, thereby improving FCP by 30%.\n' +
+              '\n' +
+              'Integrated a video player with HLS and DASH support, worked with adaptive bitrate and DRM-protected content.\n' +
+              '\n' +
+              'Handled responsive and cross-browser layout, build configuration (Webpack), and frontend CI/CD setup.',
           tags: ['React.js', 'MobX', 'TypeScript', 'SSR', 'Styled-components'],
         },
         {
@@ -50,7 +56,15 @@ export const translations = {
           period: 'Jun — Sep 2023',
           title: 'Enterprise Corporate Site',
           role: 'Team Lead · 4 members',
-          description: 'Technical & architectural solutions, code review, deployment, refactoring.',
+          description: 'Built landing pages from scratch using Static Site Generation (SSG) and Incremental Static Regeneration (ISR) for instant load times and excellent Core Web Vitals, achieving a Lighthouse Performance Score of 95+ and increasing conversion rates.\n' +
+              '\n' +
+              'Developed the visual layer with React + Tailwind CSS (or Styled Components), fully adaptive for mobile and tablet devices. Actively used animations (Framer Motion, GSAP, CSS transitions) to capture attention and boost engagement.\n' +
+              '\n' +
+              'Lead capture forms implemented with React Hook Form + Yup, sending data directly to CRMs (amoCRM, HubSpot, Bitrix24) via Webhook or API. Set up end-to-end analytics: Google Tag Manager, Google Analytics 4, Facebook Pixel, and dataLayer events.\n' +
+              '\n' +
+              'Integrated payment systems (Stripe, PayPal, Tinkoff) and email marketing services (Unisender, Mailchimp) into the landing pages.\n' +
+              '\n' +
+              'Optimized performance: prioritized loading with next/image, WebP/AVIF formats, lazy loading for below-the-fold components, skeleton screens, and CDN caching. As a result, First Contentful Paint decreased by 10% and Largest Contentful Paint by 20%.',
           tags: ['React.js', 'Node.js'],
         },
         {
@@ -58,13 +72,16 @@ export const translations = {
           title: 'Face Recognition Web App',
           role: 'Full-stack Developer',
           description:
-            'Backend for high-frequency requests, image storage, Telegram bot, SPA deployment.',
+            'Full-stack developer on a face identification system for retail and hospitality.\n' +
+              'Single-handedly built the client side from scratch (from design to production) using React with Redux for state management, and the server side with NestJS + MongoDB. Database interaction via Prisma ORM. Set up a fully-fledged REST API and seamless data exchange between frontend and backend.\n' +
+              'Integrated an external face recognition service: when a customer enters a store or hotel, the system automatically loads their profile including discount, purchase history, behavioral data, and photo.\n' +
+              'Deployed via Netlify.',
           tags: ['React', 'NestJS', 'Prisma', 'Firebase'],
         },
         {
           period: 'Jul 2019 — Feb 2020',
           title: 'Task Management System',
-          role: 'Front-end Developer',
+          role: 'Frontend Developer',
           description: 'Auth system, task drag&drop, weather widget, data storage.',
           tags: ['React', 'Redux', 'JWT', 'Firebase'],
         },
@@ -114,7 +131,7 @@ export const translations = {
     contact: {
       title: 'Get in touch',
       description:
-        'Open to interesting projects, Tech Lead positions, and Smart TV / streaming opportunities. Let’s build something great together.',
+        'Open to interesting projects, Frontend & Fullstack positions. Let’s build something great together.',
       links: [
         { label: 'Email', value: 'moskalevnikolay1@gmail.com', href: 'mailto:moskalevnikolay1@gmail.com' },
         { label: 'GitHub', value: 'github.com/moskalevNick', href: 'https://github.com/moskalevNick' },
@@ -136,9 +153,9 @@ export const translations = {
     },
     hero: {
       badge: 'Открыт к предложениям',
-      role: 'Tech Lead / Front-end Architect',
+      role: 'Frontend / Fullstack developer',
       description:
-        'Tech Lead и front-end архитектор с сильным продуктовым видением. Опыт руководства веб-командами, экосистемой Smart TV (Tizen, WebOS), высоконагруженным стримингом и полным циклом разработки.',
+        'Fullstack & Frontend разработчик с сильным продуктовым видением. Опыт руководства веб-командами, экосистемой Smart TV (Tizen, WebOS), высоконагруженным стримингом и полным циклом разработки.',
       location: 'Удалённо / Европа',
       focus: 'Smart TV · Web · Full-cycle',
       languages: 'Английский B1 · Русский родной',
@@ -158,10 +175,13 @@ export const translations = {
         },
         {
           period: 'Июл 2023 — н.в.',
-          title: 'TV-alike Streaming Service',
+          title: 'Voka.tv web',
           role: 'Web-app Developer · команда из 30 человек',
           description:
-            'Full-cycle разработка, доработка дизайна и логики, оптимизация производительности, кастомный SSR. Интеграция со стриминговыми бэкендами, DRM и аналитическими модулями.',
+            'Разрабатывал клиентскую часть высоконагруженного веб-приложения на React с использованием MobX для управления состоянием, а так же самописным SSR на node.js.\n' +
+              'Реализовал code splitting, lazy loading компонентов и роутов, кэширование данных на клиенте для оптимизации производительности, тем самым ускорил FCP на 30%.\n' +
+              'Интегрировал видеоплеер с поддержкой HLS, dash, работал с адаптивным битрейтом и DRM-контентом.\n' +
+              'Занимался адаптивной и кроссбраузерной вёрсткой, настройкой сборки (Webpack), настройкой CI/CD для фронтенда.\n',
           tags: ['React.js', 'MobX', 'TypeScript', 'SSR', 'Styled-components'],
         },
         {
@@ -176,7 +196,11 @@ export const translations = {
           period: 'Июн — Сен 2023',
           title: 'Enterprise Corporate Site',
           role: 'Team Lead · 4 человека',
-          description: 'Технические и архитектурные решения, code review, деплой, рефакторинг.',
+          description: 'Разрабатывал лендинги с нуля, используя статическую генерацию (SSG) и инкрементальную регенерацию (ISR) для мгновенной загрузки и отличных показателей Core Web Vitals. Это позволило достичь Lighthouse Performance Score 95+ и повысить конверсию.\n' +
+              'Визуальная часть на React + Tailwind CSS (или Styled Components) с полной адаптацией под мобильные устройства и планшеты. Активно применял анимации (Framer Motion, GSAP, CSS transitions) для удержания внимания и увеличения вовлечённости.\n' +
+              'Формы захвата лидов реализованы через React Hook Form + Yup, с отправкой данных напрямую в CRM (amoCRM, HubSpot, Bitrix24) через Webhook или API. Настроил сквозную аналитику: Google Tag Manager, Google Analytics 4, Facebook Pixel, события в dataLayer.\n' +
+              'Лендинги интегрировал с платёжными системами (Stripe, PayPal, Tinkoff) и сервисами рассылок (Unisender, Mailchimp).\n' +
+              'Оптимизировал производительность: next/image с приоритетной загрузкой, WebP/AVIF, lazy loading компонентов ниже линии сгиба, скелетоны, кэширование через CDN. В результате First Contentful Paint снизился на 10%, а Largest Contentful Paint — на 20%.',
           tags: ['React.js', 'Node.js'],
         },
         {
@@ -184,13 +208,16 @@ export const translations = {
           title: 'Face Recognition Web App',
           role: 'Full-stack Developer',
           description:
-            'Бэкенд для высокочастотных запросов, хранилище изображений, Telegram-бот, деплой SPA.',
+            'Full-stack разработчик в проекте системы идентификации по лицу для ритейла и гостиничного бизнеса.\n' +
+              'В одиночку с нуля (от макета до production) разработал клиентскую часть на React с Redux (управление состоянием) и серверную часть на NestJS + MongoDB. Взаимодействие с базой данных — через Prisma ORM. Настроил полноценное REST API и обмен данными между фронтендом и бэкендом.\n' +
+              'Реализовал интеграцию с внешним сервисом распознавания лиц (Face Recognition): при входе клиента в магазин/отель система автоматически загружает его профиль со скидкой, историей покупок, поведенческими данными и фотографией.\n' +
+              'Задеплоено было через Netlify',
           tags: ['React', 'NestJS', 'Prisma', 'Firebase'],
         },
         {
           period: 'Июл 2019 — Фев 2020',
           title: 'Task Management System',
-          role: 'Front-end Developer',
+          role: 'Frontend Developer',
           description: 'Система авторизации, drag&drop задач, виджет погоды, хранилище данных.',
           tags: ['React', 'Redux', 'JWT', 'Firebase'],
         },
@@ -240,7 +267,7 @@ export const translations = {
     contact: {
       title: 'Связаться',
       description:
-        'Открыт к интересным проектам, позициям Tech Lead и возможностям в Smart TV / стриминге. Давайте делать крутые вещи вместе.',
+        'Открыт к интересным проектам, позициям Frontend и Fullstack разработчика. Давайте делать крутые вещи вместе.',
       links: [
         { label: 'Email', value: 'moskalevnikolay1@gmail.com', href: 'mailto:moskalevnikolay1@gmail.com' },
         { label: 'GitHub', value: 'github.com/moskalevNick', href: 'https://github.com/moskalevNick' },
